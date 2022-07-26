@@ -1,0 +1,311 @@
+@import url('https://use.typekit.net/nzi6mna.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    /*font-family: ;*/
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: #03078E;
+    background-color: #F7F2EF;
+}
+/* NAV */
+.navigation{
+    background-color: #004677;
+}
+
+nav#menu > div > ul.nav> .nav-item > .nav-link{
+    color: #FFFFFF;
+}
+nav#menu > div > ul.nav> .nav-item > .nav-link:hover {
+    transform: scale(1.2);
+    opacity: 0.7;
+    transition: all .5s ease-out;
+}
+.logo {
+    height: 40px;
+    margin-top: -35px;
+}
+.font-controls {
+    display: flex;
+    font-size: 15px;
+    margin-bottom: 6px;
+    color: #FFFFFF;
+}
+
+.font-control {
+    margin-left: 0.5em;
+    padding: 0.25em 0.45em;
+    border: 1px solid #f2f2f2;
+    cursor: pointer;
+    display: inline-block;
+}
+.rs_addtools .rsbtn_play, .rsbtn .rsbtn_play {
+    background-color: inherit !important;
+    border: 1px solid #FFFFFF !important;
+    height: 100% !important;
+    padding: 2px;
+}
+.rsbtn_text span {
+    color: #FFFFFF !important;
+}
+.rs_addtools .rsbtn_play .rsbtn_left .rsbtn_text::before, .rsbtn .rsbtn_play .rsbtn_left .rsbtn_text::before {
+    color: #FFFFFF !important;
+}
+.rs_addtools.mega_toggle .rsbtn_tooltoggle, .rsbtn.mega_toggle .rsbtn_tooltoggle {
+    font-size: 1.3em !important;
+    top: 4px !important;
+    left: 4px !important;
+    bottom: 3px !important;
+}
+/* jumbotron (hero component) */
+
+
+#leer{
+    background-color: #F7F2EF;
+}
+.main p{
+    font-size: 1.5em;
+}
+
+.title{
+    color: #084675;
+    font-family:  museo-slab, serif;
+    font-weight: 900;
+    text-align: center;
+}
+
+/*-----------------------ACORDEONES--------------------------*/
+/*ACORDEONES*/
+ 
+button.acd-2 {
+    color: #084675;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    outline: none;
+    transition: 1s;
+    position: relative;
+    margin: auto;
+    display: block;
+    padding: 15px 45px 15px 20px;
+    background-color: #7EC0CE;
+    border: none;
+    
+}
+
+button.acd-2:after {
+    color: #084675;
+    font-family: FontAwesome;
+    font-size: 1.75em;
+    content: '\002B';
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+button.acordion.active:after {
+    font-family: FontAwesome;
+    content: "\2212";
+    font-weight: bold;
+    transition: all .5s  ease;
+}
+h3.acordion-titles{
+    font-family: museo-slab, serif;
+    font-size: 1.4em;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+   color: #084675;
+}
+
+div.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-bottom: 10px;
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+.panel-child{
+    padding: 2rem 3rem;
+    margin: 0 1rem;
+    border: 2px #7EC0CE solid;
+    margin-bottom: 10px;
+    background-color: inherit;
+}
+div.panel p {
+    font-size: 1.1em;
+    line-height: 1.75rem;
+    color: #084675;
+    
+}
+div.panel li {
+    font-size: 1.1em;
+    line-height: 1.75rem;
+    color: #084675;
+    
+}
+
+
+/*Ejemplos*/
+.bg-ej{
+    background-color: #71A4CD;
+    border-radius: 35px ;
+    padding: 0;
+}
+.bg-ej p{
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1.6em;
+    color: #FFFFFF;
+}
+/* ----------------------- FOOTER ----------------------- */
+.footer {
+    bottom: 0;
+    width: 100%;
+    line-height: 1.5rem;
+    background-color: #004677;
+    color: #ffffff;
+    position: relative;
+}
+.border-bottom {
+    border-bottom: 1px solid #192e85 !important;
+}
+.separa-logo {
+    display: inline-block;
+}
+.gob-txt{
+    line-height: 1.2rem;
+    text-align: right;
+}
+.redes-sociales{
+    display:flex;
+    justify-content:stretch;
+    justify-content: center;
+    border-left: 2px solid white;
+}
+.socialmedia{
+    display: flex;
+    text-align: left;
+    flex-direction: row;
+}
+footer a, footer a:visited, footer a:active{
+    color: #ffffff;
+    font-weight: 400;
+}
+footer a:hover {
+    color: white;
+    text-decoration: none;
+}
+/* mantiene el logo de gob en el bottom de la pagina */
+.vertical-align-bottom{
+    position: absolute;
+    bottom: 0;
+}
+/* ----------------------- REDES SOCIALES ----------------------- */
+.fa-instagram, .fa-twitter, .fa-facebook-f, .fa-linkedin {
+    padding: 5px 8px;
+    font-size: 1.2rem;
+    display:flex;
+    justify-content: space-around;
+    transition: all 0.3s ease-in-out;
+    color: #FFFFFF;
+}
+.col-12, .col-md-9, .col-lg-9, .col-4, .col-md-4, .col-md-3, .col-lg-3, .col {
+    float: left;
+}
+ul li {
+    padding-bottom: 15px;
+}
+.separador {
+    color: #0F69C4;
+}
+
+
+/*------------------MEDIA QUERYS--------------------*/
+@media (max-width: 992px) {
+    .logo {
+        height: 30px;
+        margin-top: -35px;
+    }
+    .main p{
+        font-size: 1.3rem;
+    }
+    h3.acordion-titles{
+        font-size: 1.2em;
+    }
+    .bg-ej p{
+        font-size: 1.45em;
+    }
+}
+
+@media (max-width: 760px){
+    nav#menu > div > ul.nav> .nav-item > .nav-link:hover {
+        transform: none;
+        transition: none;
+    }
+    .hero {
+        height: 300px;
+    }
+    .separa-logo {
+        display: grid;
+        grid-template-rows: 45px 46px;
+        row-gap: 20px;
+    }
+    .gob-txt{
+        text-align: left;
+    }
+   
+    .main p{
+        font-size: 1.125em;
+    }
+    button.acordion:after {
+        font-size: 1.2em;
+    }
+    .panel-child {
+        padding: 1rem 2rem;
+    }
+    .bg-ej p{
+        font-size: 1.2em;
+    }
+}
+@media (max-width: 540px) {
+
+    nav#menu {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .bg-logo{
+        background-size: 300px;
+    }
+    
+    .main p{
+        font-size: 0.9375em;
+  
+    }
+    .bg-ej p{
+        font-size: 1.1em;
+    }
+    h3.acordion-titles{
+        font-size: 0.8em;
+        padding-right: 10px;
+    }
+    button.acordion.acd-2 {
+        padding: 10px;
+    }
+    button.acd-2:after {
+        font-size: 0.5em;
+    }
+    div.panel p, li{
+        font-size: 0.875em;
+    }
+}
