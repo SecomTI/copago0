@@ -24,6 +24,7 @@ body{
 
 nav#menu > div > ul.nav> .nav-item > .nav-link{
     color: #FFFFFF;
+    cursor: pointer;
 }
 nav#menu > div > ul.nav> .nav-item > .nav-link:hover {
     transform: scale(1.2);

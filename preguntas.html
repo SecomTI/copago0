@@ -47,10 +47,13 @@
                         style="z-index: 1;">
                         <ul class="nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="https://www.gob.cl/chileapoya">Inicio</a>
+                                <p class="nav-link" onclick="redireccionInterna('/')">Inicio</p>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#medidas">Medidas</a>
+                                <p class="nav-link" onclick="redireccionInterna('/ejemplos')">Ejemplos</p>
+                            </li>
+                            <li class="nav-item">
+                                <p class="nav-link" onclick="redireccionInterna('/preguntas')">Preguntas frecuentes</p>
                             </li>
                             <li class="nav-item">
                                 <div id="readspeaker_button1" class="rs_skip rsbtn rs_preserve">
@@ -61,7 +64,7 @@
                                                 class="rsbtn_text"><span>Escuchar</span></span></span>
                                     </a>
                                 </div>
-                               
+    
                             </li>
                             <li class="nav-item">
                                 <div class="font-controls desktop">
@@ -416,6 +419,19 @@
                 main.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
                 console.log(main.className)
             }
+            function redireccionInterna ( path ) {
+            const host = window.location.host;
+            const hostname = window.location.hostname;
+            console.log( { host, hostname } )
+            if ( path === '/' ) return window.location.assign( '/' )
+            if ( hostname === 'localhost' || hostname === '127.0.0.1' ) {
+                return window.location.assign( `http://${host}${path}.html` );
+            }
+            else {
+                const midPath = '/copagocero'
+                return window.location.assign( `https://${host}${midPath}${path}` );
+            }
+        }
         </script>
     
     </body>
