@@ -215,6 +215,30 @@ nav#menu > div > ul.nav> .nav-item > .nav-link:hover {
     height: 180px;
     overflow: hidden
 }
+
+.contenedorTestimonios .cierre {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    align-items: center;
+}
+.cierre .curva {
+    display: flex;
+    justify-content: center;
+}
+.cierre .curva img {
+    width: 40%;
+}
+.cierre .texto {
+    color: #084675;
+    font-size: 2em;
+    font-weight: 700
+}
+.cierre .boton {
+    display: flex;
+    justify-content: center;
+}
+
 /* ----------------------- FOOTER ----------------------- */
 .footer {
     bottom: 0;
