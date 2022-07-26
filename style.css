@@ -221,13 +221,15 @@ nav#menu > div > ul.nav> .nav-item > .nav-link:hover {
     flex-flow: column nowrap;
     width: 100%;
     align-items: center;
+    padding: 2em;
+    margin-top: 1em
 }
 .cierre .curva {
     display: flex;
     justify-content: center;
 }
 .cierre .curva img {
-    width: 40%;
+    width: 50%;
 }
 .cierre .texto {
     color: #084675;
@@ -237,6 +239,10 @@ nav#menu > div > ul.nav> .nav-item > .nav-link:hover {
 .cierre .boton {
     display: flex;
     justify-content: center;
+}
+.cierre .boton img {
+    width: 65%;
+    cursor: pointer;
 }
 
 /* ----------------------- FOOTER ----------------------- */
