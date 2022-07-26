@@ -91,7 +91,7 @@ nav#menu > div > ul.nav> .nav-item > .nav-link:hover {
     font-size: 1.8em;
 }
 
-.contenido .anchoComun {
+.anchoComun {
     max-width: 1250px;
 }
 .contenido p {
@@ -141,8 +141,80 @@ nav#menu > div > ul.nav> .nav-item > .nav-link:hover {
 }
 
 
+.testimonios {
+    width: 100%;
+    padding: 2em 1em;
+    color: #F7F2EF;
 
+}
+.contenedorTestimonios {
+    background-color: #71A4CD;
+    border-radius: 20px;
+    padding: 1em;
+}
 
+.contenedorTestimonios .cabecera {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%
+}
+.contenedorTestimonios .cabecera .lado {
+    width: 50%;
+    padding: 2em;
+}
+/* .cabecera .lado img {
+    width: 100%;
+} */
+.rela {
+    position: relative;
+}
+.rela img {
+    position: absolute;
+    top: -30%;
+    max-width: 400px;
+    right: 0;
+}
+.lado .titulo {
+    font-size: 2.5em
+}
+.lado .curva {
+    width: 270px
+
+}
+
+.cuerpoTestimonio {
+    padding: 0 2em
+}
+.desarrollo .subTitulo {
+    padding-bottom: 1em
+}
+
+.tabla {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    border: 1px solid #F7F2EF;
+    margin: 2em 0 2em 0
+}
+.contenidoTable {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+}
+.contenidoTable .titulo {
+    color: #084675;
+}
+.contenidoTable .detalle {
+    font-size: .7em;
+    display: flex;
+    border: 2px solid #F7F2EF;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 180px;
+    overflow: hidden
+}
 /* ----------------------- FOOTER ----------------------- */
 .footer {
     bottom: 0;
