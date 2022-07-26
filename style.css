@@ -10,6 +10,10 @@ html{
 body{
     font-family: 'Source Sans Pro', sans-serif;
     color: #03078E;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
 }
 /* NAV */
 .navigation{
