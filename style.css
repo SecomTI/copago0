@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 html{
     scroll-behavior: smooth;
@@ -6,7 +6,7 @@ html{
 *{
     margin: 0;
     padding: 0;
-    /*font-family: ;*/
+    font-family: 'Montserrat', sans-serif;
 }
 body{
     font-family: 'Source Sans Pro', sans-serif;
@@ -15,6 +15,7 @@ body{
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
+    background-color: #F7F2EF;
 }
 /* NAV */
 .navigation{
@@ -68,10 +69,78 @@ nav#menu > div > ul.nav> .nav-item > .nav-link:hover {
 /* jumbotron (hero component) */
 
 
+/* Contenido */
 
 .main p{
     font-size: 1.5em;
 }
+
+
+.bold {
+    font-weight: 700
+}
+
+.contenido {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em;
+    color: #336E91;
+    background-color: #F7F2EF;
+    font-size: 1.8em;
+}
+
+.contenido .anchoComun {
+    max-width: 1250px;
+}
+.contenido p {
+    padding: 2em 2em 1em 2em;
+}
+.contenido .video {
+    width: 100%;
+    max-width: 1250px;
+    padding: 2em
+}
+
+.video-banner {
+    border-radius: 20px
+}
+
+.globosTexto {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    padding: 2em;
+    width: 100%;
+}
+.globosTexto .GloboTitulo {
+    width: 300px
+}
+.globoZ {
+    position: relative;
+}
+.zigzag {
+    position: absolute;
+    width: 33%;
+    right: -2em;
+    top: 30px;
+}
+.zigzag img {
+    width: 100%;
+}
+
+.globoTexto {
+    margin-top: 1em;
+    background-color: #E4E4E4;
+    border-radius: 20px;
+}
+
+.segundo {
+    margin-top: 4em
+}
+
+
 
 
 /* ----------------------- FOOTER ----------------------- */
@@ -135,6 +204,8 @@ ul li {
 .separador {
     color: #0F69C4;
 }
+
+
 
 
 /*------------------MEDIA QUERYS--------------------*/

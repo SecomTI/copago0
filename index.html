@@ -84,6 +84,7 @@
     </header>
 
     <main id="leer" class="light-mode">
+        <!-- Header -->
         <div class="headerBody">
             <div class="filtroBlur">
                 <img src="static/header.webp" alt="">
@@ -101,7 +102,58 @@
             </div>
         </div>
 
+        <!-- Contenido -->
 
+        <section class="contenido">
+            <div class="intro anchoComun">
+                <p>
+                    Porque nuestro compromiso como Gobierno es <span class="bold">fortalecer la Salud Pública</span> y
+                    <span class="bold">garantizar el derecho</span> a la salud: desde septiembre de 2022, las personas
+                    beneficiarias de Fonasa de los <span class="bold">tramos C y D</span> tendrán <span
+                        class="bold">gratuidad en todas sus atenciones en el sistema público de salud. </span>
+                    <br>
+                    <br>
+                    De esta manera, más de <span class="bold">15 millones de personas que forman parte de Fonasa</span>
+                    no tendrán que pagar por las atenciones que reciban en su <span class="bold">Centro de Salud
+                        Familiar, Hospital</span> u otro recinto al que acceda en la <span class="bold">Modalidad de
+                        Atención Institucional</span>, es decir, en la Red Pública.
+                </p>
+            </div>
+
+            <div class="video anchoComun">
+                <div class="embed-responsive embed-responsive-16by9 video-banner">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/juMTVHgedpQ"
+                        allowfullscreen=""></iframe>
+                </div>
+            </div>
+
+            <div class="globosTexto anchoComun globoZ">
+                <div class="zigzag"><img src="/static/zigzag.svg" alt=""></div>
+
+                <div class="GloboTitulo">
+                    <img src="/static/botones/Recurso 1.svg" alt="">
+                </div>
+                <div class="globoTexto">
+                    <p>Desde septiembre de 2022, si eres parte de Fonasa, todas las atenciones que recibas en el sistema
+                        público serán gratuitas, sin importar el tramo al que pertenezcas.
+                        <br>
+                        <br>
+                        En decir, las personas beneficiarias de Fonasa de los tramos C y D tendrán gratuidad en todas
+                        sus atenciones en el sistema público de salud (AUGE/GES y No AUGE/GES), sumándose así a la
+                        gratuidad que ya tienen las personas de los tramos A y B.
+                    </p>
+                </div>
+
+                <div class="GloboTitulo segundo"> <img src="/static/botones/Recurso 1.svg" alt=""></div>
+                <div class="globoTexto">
+                    <p>Desde septiembre de 2022 este beneficio se activa automáticamente para todas las personas que
+                        pertenecen a Fonasa. No tienes que realizar ningún trámite asociado a la atención de salud.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
         <footer class="footer">
             <div class="container">
                 <div class="row">
@@ -217,7 +269,7 @@
             const host = window.location.host;
             const hostname = window.location.hostname;
             console.log( { host, hostname } )
-            if (path === '/') return window.location.assign('/')
+            if ( path === '/' ) return window.location.assign( '/' )
             if ( hostname === 'localhost' || hostname === '127.0.0.1' ) {
                 return window.location.assign( `http://${host}${path}.html` );
             }
