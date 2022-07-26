@@ -1,20 +1,16 @@
+@import url('https://use.typekit.net/nzi6mna.css');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
 html{
     scroll-behavior: smooth;
 }
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    /*font-family: ;*/
 }
 body{
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #03078E;
-    min-height: 100vh;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
     background-color: #F7F2EF;
 }
 /* NAV */
@@ -69,182 +65,109 @@ nav#menu > div > ul.nav> .nav-item > .nav-link:hover {
 /* jumbotron (hero component) */
 
 
-/* Contenido */
-
+#leer{
+    background-color: #F7F2EF;
+}
 .main p{
     font-size: 1.5em;
 }
 
-
-.bold {
-    font-weight: 700
-}
-
-.contenido {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    padding: 1.5em;
-    color: #336E91;
-    background-color: #F7F2EF;
-    font-size: 1.8em;
-}
-
-.anchoComun {
-    max-width: 1250px;
-}
-.contenido p {
-    padding: 2em 2em 1em 2em;
-}
-.contenido .video {
-    width: 100%;
-    max-width: 1250px;
-    padding: 2em
-}
-
-.video-banner {
-    border-radius: 20px
-}
-
-.globosTexto {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: flex-start;
-    padding: 2em;
-    width: 100%;
-}
-.globosTexto .GloboTitulo {
-    width: 300px
-}
-.globoZ {
-    position: relative;
-}
-.zigzag {
-    position: absolute;
-    width: 33%;
-    right: -2em;
-    top: 30px;
-}
-.zigzag img {
-    width: 100%;
-}
-
-.globoTexto {
-    margin-top: 1em;
-    background-color: #E4E4E4;
-    border-radius: 20px;
-}
-
-.segundo {
-    margin-top: 4em
-}
-
-
-.testimonios {
-    width: 100%;
-    padding: 2em 1em;
-    color: #F7F2EF;
-
-}
-.contenedorTestimonios {
-    background-color: #71A4CD;
-    border-radius: 20px;
-    padding: 1em;
-}
-
-.contenedorTestimonios .cabecera {
-    display: flex;
-    flex-flow: row nowrap;
-    width: 100%
-}
-.contenedorTestimonios .cabecera .lado {
-    width: 50%;
-    padding: 2em;
-}
-/* .cabecera .lado img {
-    width: 100%;
-} */
-.rela {
-    position: relative;
-}
-.rela img {
-    position: absolute;
-    top: -30%;
-    max-width: 400px;
-    right: 0;
-}
-.lado .titulo {
-    font-size: 2.5em
-}
-.lado .curva {
-    width: 270px
-
-}
-
-.cuerpoTestimonio {
-    padding: 0 2em
-}
-.desarrollo .subTitulo {
-    padding-bottom: 1em
-}
-
-.tabla {
-    display: flex;
-    flex-flow: column nowrap;
-    width: 100%;
-    border: 1px solid #F7F2EF;
-    margin: 2em 0 2em 0
-}
-.contenidoTable {
-    display: flex;
-    flex-flow: row nowrap;
-    width: 100%;
-}
-.contenidoTable .titulo {
+.title{
     color: #084675;
-}
-.contenidoTable .detalle {
-    font-size: .7em;
-    display: flex;
-    border: 2px solid #F7F2EF;
-    width: 20%;
-    justify-content: center;
-    align-items: center;
+    font-family:  museo-slab, serif;
+    font-weight: 900;
     text-align: center;
-    height: 180px;
-    overflow: hidden
 }
 
-.contenedorTestimonios .cierre {
-    display: flex;
-    flex-flow: column nowrap;
-    width: 100%;
-    align-items: center;
-    padding: 2em;
-    margin-top: 1em
-}
-.cierre .curva {
-    display: flex;
-    justify-content: center;
-}
-.cierre .curva img {
-    width: 50%;
-}
-.cierre .texto {
+/*-----------------------ACORDEONES--------------------------*/
+/*ACORDEONES*/
+ 
+button.acd-2 {
     color: #084675;
-    font-size: 2em;
-    font-weight: 700
-}
-.cierre .boton {
-    display: flex;
-    justify-content: center;
-}
-.cierre .boton img {
-    width: 65%;
     cursor: pointer;
+    width: 100%;
+    text-align: center;
+    outline: none;
+    transition: 1s;
+    position: relative;
+    margin: auto;
+    display: block;
+    padding: 15px 45px 15px 20px;
+    background-color: #7EC0CE;
+    border: none;
+    
 }
 
+button.acd-2:after {
+    color: #084675;
+    font-family: FontAwesome;
+    font-size: 1.75em;
+    content: '\002B';
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+button.acordion.active:after {
+    font-family: FontAwesome;
+    content: "\2212";
+    font-weight: bold;
+    transition: all .5s  ease;
+}
+h3.acordion-titles{
+    font-family: museo-slab, serif;
+    font-size: 1.4em;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+   color: #084675;
+}
+
+div.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-bottom: 10px;
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+.panel-child{
+    padding: 2rem 3rem;
+    margin: 0 1rem;
+    border: 2px #7EC0CE solid;
+    margin-bottom: 10px;
+    background-color: inherit;
+}
+div.panel p {
+    font-size: 1.1em;
+    line-height: 1.75rem;
+    color: #084675;
+    
+}
+div.panel li {
+    font-size: 1.1em;
+    line-height: 1.75rem;
+    color: #084675;
+    
+}
+
+
+/*Ejemplos*/
+.bg-ej{
+    background-color: #71A4CD;
+    border-radius: 35px ;
+    padding: 0;
+}
+.bg-ej p{
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1.6em;
+    color: #FFFFFF;
+}
 /* ----------------------- FOOTER ----------------------- */
 .footer {
     bottom: 0;
@@ -308,8 +231,6 @@ ul li {
 }
 
 
-
-
 /*------------------MEDIA QUERYS--------------------*/
 @media (max-width: 992px) {
     .logo {
@@ -318,6 +239,12 @@ ul li {
     }
     .main p{
         font-size: 1.3rem;
+    }
+    h3.acordion-titles{
+        font-size: 1.2em;
+    }
+    .bg-ej p{
+        font-size: 1.45em;
     }
 }
 
@@ -341,7 +268,15 @@ ul li {
     .main p{
         font-size: 1.125em;
     }
-
+    button.acordion:after {
+        font-size: 1.2em;
+    }
+    .panel-child {
+        padding: 1rem 2rem;
+    }
+    .bg-ej p{
+        font-size: 1.2em;
+    }
 }
 @media (max-width: 540px) {
 
@@ -356,5 +291,21 @@ ul li {
     .main p{
         font-size: 0.9375em;
   
+    }
+    .bg-ej p{
+        font-size: 1.1em;
+    }
+    h3.acordion-titles{
+        font-size: 0.8em;
+        padding-right: 10px;
+    }
+    button.acordion.acd-2 {
+        padding: 10px;
+    }
+    button.acd-2:after {
+        font-size: 0.5em;
+    }
+    div.panel p, li{
+        font-size: 0.875em;
     }
 }

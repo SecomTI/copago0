@@ -1,0 +1,38 @@
+.headerBody {
+	background-image: url(/static/mini-header.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.headerBody .filtroBlur {
+	width: 100%;
+	backdrop-filter: blur(10px);
+	display: flex;
+	justify-content: center;
+}
+.headerBody img {
+	width: 100%;
+	max-width: 1250px;
+	position: relative;
+}
+
+.contenedorLogo {
+	position: absolute;
+	right: 50%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.contenedorLogo .lados {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	padding: 2em;
+	max-width: 625px;
+}
+
+.lados .lado {
+	padding: .5em;
+	max-width: 220px
+}

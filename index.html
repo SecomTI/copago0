@@ -1,195 +1,353 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <!-- BOOTSTRAP 4.6 -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-            integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-      
-        <!-- FONT AWESOME -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-            integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-        <!----------------- FONT AWESOME ----------------->
-        <!-- V5.1 -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
-            integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-        <!-- V5.5 -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-            integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-        <link rel="stylesheet" href="@gobdigital-cl/dist/css/gob.cl.css" type="text/css" />
-        <!-- MY STYLE -->
-        <link rel="stylesheet" href="/style.css">
-        <link rel="stylesheet"
-            href="https://s3.amazonaws.com/gobcl-prod/public_files/Campa%C3%B1as/Chile-Apoya/dark-mode1.css">
-        <script src="https://cdn-sa.readspeaker.com/script/9676/webReader/webReader.js?pids=wr" type="text/javascript"
-            id="rs_req_Init"></script>
-    
-        <title>Lorem ipsum dolor sit.</title>
-        
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- BOOTSTRAP 4.6 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
-    <body>
-        <header class="container-fluid navigation sticky-top rs_skip">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!----------------- FONT AWESOME ----------------->
+    <!-- V5.1 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <!-- V5.5 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="@gobdigital-cl/dist/css/gob.cl.css" type="text/css" />
+    <!-- MY STYLE -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet"
+        href="https://s3.amazonaws.com/gobcl-prod/public_files/Campa%C3%B1as/Chile-Apoya/dark-mode1.css">
+    <script src="https://cdn-sa.readspeaker.com/script/9676/webReader/webReader.js?pids=wr" type="text/javascript"
+        id="rs_req_Init"></script>
+
+    <title>Copago 0</title>
+
+</head>
+
+<body>
+    <header class="container-fluid navigation sticky-top rs_skip">
+        <div class="container">
+            <nav id="menu" class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="https://www.gob.cl/" target="_blank"><img
+                        src="https://cdn.digital.gob.cl/public_files/Logos/logo-gob-header.svg" class="logo"
+                        alt="Gobierno de Chile"></a>
+                <button class="navbar-toggler mt-1" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent"
+                    style="z-index: 1;">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <p class="nav-link" onclick="redireccionInterna('/')">Inicio</p>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" :href="#medidas">Medidas</a>
+                        </li>
+                        <li class="nav-item">
+                            <p class="nav-link" onclick="redireccionInterna('/ejemplos')">Ejemplos</p>
+                        </li>
+                        <li class="nav-item">
+                            <div id="readspeaker_button1" class="rs_skip rsbtn rs_preserve">
+                                <a rel="nofollow" class="rsbtn_play" accesskey="L"
+                                    title="Escucha esta p&aacute;gina utilizando ReadSpeaker webReader"
+                                    href="https://app-sa.readspeaker.com/cgi-bin/rsent?customerid=9676&amp;lang=es_us&amp;readid=leer&amp;url=https://www.gob.cl/chileapoya">
+                                    <span class="rsbtn_left rsimg rspart rsplay"><span
+                                            class="rsbtn_text"><span>Escuchar</span></span></span>
+                                </a>
+                            </div>
+
+                        </li>
+                        <li class="nav-item">
+                            <div class="font-controls desktop">
+                                <span onclick="zoomIn()" class="font-control" id="font-up">A<sup>+</sup></span>
+                                <span onclick="zoomOut()" class="font-control" id="font-down">A<sup>-</sup></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container d-flex justify-content-end">
+
+
+        </div>
+    </header>
+
+    <main id="leer" class="light-mode">
+        <!-- Header -->
+        <div class="headerBody">
+            <div class="filtroBlur">
+                <img src="static/header.webp" alt="">
+                <div class="contenedorLogo">
+                    <div class="lados">
+                        <div class="lado">
+                            <img src="/static/Corazon.png" alt="">
+                        </div>
+                        <div class="lado">
+                            <img src="/static/Copago.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenido -->
+
+        <section class="contenido">
+            <div class="intro anchoComun">
+                <p>
+                    Porque nuestro compromiso como Gobierno es <span class="bold">fortalecer la Salud Pública</span> y
+                    <span class="bold">garantizar el derecho</span> a la salud: desde septiembre de 2022, las personas
+                    beneficiarias de Fonasa de los <span class="bold">tramos C y D</span> tendrán <span
+                        class="bold">gratuidad en todas sus atenciones en el sistema público de salud. </span>
+                    <br>
+                    <br>
+                    De esta manera, más de <span class="bold">15 millones de personas que forman parte de Fonasa</span>
+                    no tendrán que pagar por las atenciones que reciban en su <span class="bold">Centro de Salud
+                        Familiar, Hospital</span> u otro recinto al que acceda en la <span class="bold">Modalidad de
+                        Atención Institucional</span>, es decir, en la Red Pública.
+                </p>
+            </div>
+
+            <div class="video anchoComun">
+                <div class="embed-responsive embed-responsive-16by9 video-banner">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/juMTVHgedpQ"
+                        allowfullscreen=""></iframe>
+                </div>
+            </div>
+
+            <div class="globosTexto anchoComun globoZ">
+                <div class="zigzag"><img src="/static/zigzag.svg" alt=""></div>
+
+                <div class="GloboTitulo">
+                    <img src="/static/botones/Recurso 1.svg" alt="En que consiste">
+                </div>
+                <div class="globoTexto">
+                    <p>Desde septiembre de 2022, si eres parte de Fonasa, todas las atenciones que recibas en el sistema
+                        público serán gratuitas, sin importar el tramo al que pertenezcas.
+                        <br>
+                        <br>
+                        En decir, las personas beneficiarias de Fonasa de los tramos C y D tendrán gratuidad en todas
+                        sus atenciones en el sistema público de salud (AUGE/GES y No AUGE/GES), sumándose así a la
+                        gratuidad que ya tienen las personas de los tramos A y B.
+                    </p>
+                </div>
+
+                <div class="GloboTitulo segundo"> <img src="/static/botones/Como se activa.svg"
+                        alt="¿Como se activa el pago?"></div>
+                <div class="globoTexto">
+                    <p>Desde septiembre de 2022 este beneficio se activa automáticamente para todas las personas que
+                        pertenecen a Fonasa. No tienes que realizar ningún trámite asociado a la atención de salud.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="testimonios anchoComun">
+                <div class="contenedorTestimonios">
+                    <div class="cabecera">
+                        <div class="lado">
+                            <img class="curva" src="/static/curva.svg" alt="">
+                            <div class="titulo bold">Ejemplos</div>
+                        </div>
+                        <div class="lado rela">
+                            <img src="/static/Medico.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="cuerpoTestimonio">
+                        <div class="desarrollo">
+                            <div class="subTitulo bold"> 1. PABLO, TRAMO D</div>
+
+                            <div><span class="bold">Pablo</span> es usuario del Tramo D, tiene 50 años y vive en la
+                                comuna
+                                de Maipú. Él pertenece a Fonasa en el tramo D y le diagnosticaron Esclerosis Múltiple,
+                                uno de los 85 problemas de salud incluidos en el AUGE o GES.
+                                <br>
+                                <br>
+                                El tratamiento de esta enfermedad en el hospital en el que se atendió tuvo un costo
+                                cercano a los 17 millones de pesos. De ese monto, Fonasa pagó más de 14 millones y Pablo
+                                pagó 3.155.308 de pesos.
+                            </div>
+
+                            <div class="tabla">
+                                <div class="contenidoTable">
+                                    <div class="detalle titulo bold">Problema <br>de salud</div>
+                                    <div class="detalle titulo bold">Fecha registro <br>problema <br>de salud</div>
+                                    <div class="detalle titulo bold">Monto total <br>Valur de <br>prestaciones</div>
+                                    <div class="detalle titulo bold">Monto total <br>bonificación <br>según tramo</div>
+                                    <div class="detalle titulo bold">Monto total <br>copago <br>a pagar</div>
+                                </div>
+                                <div class="contenidoTable">
+                                    <div class="detalle">Esclerosis <br>múltiple <br>remitente <br>recurrente</div>
+                                    <div class="detalle">21/04/2017</div>
+                                    <div class="detalle">$17.320.740</div>
+                                    <div class="detalle">$14.160.206</div>
+                                    <div class="detalle">$3.155.308</div>
+                                </div>
+                            </div>
+
+                            <div>
+                                Desde septiembre de 2022 las personas como Pablo no pagarán por sus atenciones de salud en la Red Pública. Es decir, <span class="bold">serán gratuitas porque Fonasa cubrirá el costo total del tratamiento en la Modalidad de Atención Institucional.</span> 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cierre">
+                        <div class="curva"><img src="/static/curva.svg" alt=""></div>
+                        <div class="texto">Revisa más</div>
+                        <div class="boton" onclick="redireccionInterna('/ejemplos')"><img src="/static/botones/ejemplos.svg" alt=""></div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </section>
+
+
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
             <div class="container">
-                <nav id="menu" class="navbar navbar-expand-lg navbar-dark">
-                    <a class="navbar-brand" href="https://www.gob.cl/" target="_blank"><img
-                            src="https://cdn.digital.gob.cl/public_files/Logos/logo-gob-header.svg" class="logo"
-                            alt="Gobierno de Chile"></a>
-                    <button class="navbar-toggler mt-1" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent"
-                        style="z-index: 1;">
-                        <ul class="nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="https://www.gob.cl/chileapoya">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#medidas">Medidas</a>
-                            </li>
-                            <li class="nav-item">
-                                <div id="readspeaker_button1" class="rs_skip rsbtn rs_preserve">
-                                    <a rel="nofollow" class="rsbtn_play" accesskey="L"
-                                        title="Escucha esta p&aacute;gina utilizando ReadSpeaker webReader"
-                                        href="https://app-sa.readspeaker.com/cgi-bin/rsent?customerid=9676&amp;lang=es_us&amp;readid=leer&amp;url=https://www.gob.cl/chileapoya">
-                                        <span class="rsbtn_left rsimg rspart rsplay"><span
-                                                class="rsbtn_text"><span>Escuchar</span></span></span>
-                                    </a>
-                                </div>
-                               
-                            </li>
-                            <li class="nav-item">
-                                <div class="font-controls desktop">
-                                    <span onclick="zoomIn()" class="font-control" id="font-up">A<sup>+</sup></span>
-                                    <span onclick="zoomOut()" class="font-control" id="font-down">A<sup>-</sup></span>
-                                </div>
-                            </li>
-                        </ul>
+                <div class="row">
+                    <div class="col-12 col-lg-10 pt-5 pb-3">
+                        <p><b>Gobierno de Chile </b></p>
+                        <div class="col-12 col-lg-6">
+                            <p onclick="redireccionInterna('/')" class="nav-link">Inicio</p>
+                            <a href="#medidas" class="nav-link">Medidas</a>
+                            <p class="nav-link" onclick="redireccionInterna('/ejemplos')">Ejemplos</p>
+                        </div>
+                        <div class="col-12 col-lg-6">
+
+
+                        </div>
+
                     </div>
-                </nav>
+                    <div class="col-12 col-lg-2 pt-5 pb-3">
+                        <div class="float-left float-lg-right">
+                            <p><b>Síguenos</b></p>
+                            <div class="socialmedia">
+                                <a href="https://www.facebook.com/gobiernodechile" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://twitter.com/Gobiernodechile" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://www.instagram.com/gobiernodechile/" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="container d-flex justify-content-end">
-               
-              
+            <div class="container border-bottom">
             </div>
-        </header>
-    
-        <main id="leer" class="light-mode">
-           
-            <footer class="footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-lg-10 pt-5 pb-3">
-                            <p><b>Gobierno de Chile</b></p>
-                            <div class="col-12 col-lg-6">
-                                <a href="https://www.gob.cl/chileapoya" class="nav-link">Inicio</a>
-                                <a href="#medidas" class="nav-link">Medidas</a>
-                            </div>
-                            <div class="col-12 col-lg-6">
-    
-    
-                            </div>
-    
-                        </div>
-                        <div class="col-12 col-lg-2 pt-5 pb-3">
-                            <div class="float-left float-lg-right">
-                                <p><b>Síguenos</b></p>
-                                <div class="socialmedia">
-                                    <a href="https://www.facebook.com/gobiernodechile" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                                    </a>
-                                    <a href="https://twitter.com/Gobiernodechile" target="_blank" rel="noopener noreferrer">
-                                        <i class="fab fa-twitter" aria-hidden="true"></i>
-                                    </a>
-                                    <a href="https://www.instagram.com/gobiernodechile/" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <i class="fab fa-instagram" aria-hidden="true"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+            <div class="row m-0">
+                <div class="container separa-logo relative mt-4">
+
+                    <p class="gob-txt"><small>Desarrollado por Secretaría de Comunicaciones - MSGG</small></p>
+
+                    <div class="vertical-align-bottom  mt-3">
+                        <a href="https://www.gob.cl/">
+                            <img src="https://cdn.digital.gob.cl/public_files/Campa%C3%B1as/Juntos-en-Casa/gob-footer.svg"
+                                width="150" alt="Gobierno de Chile" class="align-bottom">
+                        </a>
                     </div>
+
                 </div>
-                <div class="container border-bottom">
-                </div>
-                <div class="row m-0">
-                    <div class="container separa-logo relative mt-4">
-    
-                        <p class="gob-txt"><small>Desarrollado por Secretaría de Comunicaciones - MSGG</small></p>
-    
-                        <div class="vertical-align-bottom  mt-3">
-                            <a href="https://www.gob.cl/">
-                                <img src="https://cdn.digital.gob.cl/public_files/Campa%C3%B1as/Juntos-en-Casa/gob-footer.svg"
-                                    width="150" alt="Gobierno de Chile" class="align-bottom">
-                            </a>
-                        </div>
-    
-                    </div>
-                </div>
-            </footer>
-        </main>
-        <!-- FIN FOOTER-->
-    
-        <!-- FontAwesome kit -->
-        <script src="https://kit.fontawesome.com/99f6481b29.js" crossorigin="anonymous"></script>
-        <!--jQUERY-->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"
-            class="cms-plugin cms-plugin-207207"></script>
-        <script src="https://code.jquery.com/jquery-2.2.4.js"
-            integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"
-            class="cms-plugin cms-plugin-207207"></script>
-        <!--AJAX-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"
-            class="cms-plugin cms-plugin-207207"></script>
-        <!--BOOTSTRAP-->
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-            integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"
-            class="cms-plugin cms-plugin-207207"></script>
-        <script>
-            $('#myModal').on('shown.bs.modal', function () {
-                $('#myInput').trigger('focus')
-            });
-    
-            /* SCRIPT TAMAÑO FUENTE - no aumenta tamaño de fuente establecida en pixeles */
-    
-            // funcion para aumentar la fuente
-            var fontSize = 1;
-            var fontMin = 0.75;
-            var fontMax = 1.1;
-    
-            // funcion para aumentar la fuente
-            function zoomIn() {
-                if (fontSize <= fontMax) {
-                    fontSize += 0.1;
-                    document.body.style.fontSize = fontSize + "em";
-                }
+            </div>
+        </footer>
+    </main>
+    <!-- FIN FOOTER-->
+
+    <!-- FontAwesome kit -->
+    <script src="https://kit.fontawesome.com/99f6481b29.js" crossorigin="anonymous"></script>
+    <!--jQUERY-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"
+        class="cms-plugin cms-plugin-207207"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.js"
+        integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"
+        class="cms-plugin cms-plugin-207207"></script>
+    <!--AJAX-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"
+        class="cms-plugin cms-plugin-207207"></script>
+    <!--BOOTSTRAP-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"
+        class="cms-plugin cms-plugin-207207"></script>
+
+    <script src="script.js"></script>
+    <script>
+        $( '#myModal' ).on( 'shown.bs.modal', function () {
+            $( '#myInput' ).trigger( 'focus' )
+        } );
+
+        /* SCRIPT TAMAÑO FUENTE - no aumenta tamaño de fuente establecida en pixeles */
+
+        // funcion para aumentar la fuente
+        var fontSize = 1;
+        var fontMin = 0.75;
+        var fontMax = 1.1;
+
+        // funcion para aumentar la fuente
+        function zoomIn () {
+            if ( fontSize <= fontMax ) {
+                fontSize += 0.1;
+                document.body.style.fontSize = fontSize + "em";
             }
-    
-            // funcion para disminuir la fuente
-            function zoomOut() {
-                if (fontSize >= fontMin) {
-                    fontSize -= 0.1;
-                    document.body.style.fontSize = fontSize + "em";
-                }
+        }
+
+        // funcion para disminuir la fuente
+        function zoomOut () {
+            if ( fontSize >= fontMin ) {
+                fontSize -= 0.1;
+                document.body.style.fontSize = fontSize + "em";
             }
-    
-            function toggleDarkLight() {
-    
-                var main = document.getElementById("leer");
-                var currentClass = main.className;
-                main.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
-                console.log(main.className)
+        }
+
+        function toggleDarkLight () {
+
+            var main = document.getElementById( "leer" );
+            var currentClass = main.className;
+            main.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+            console.log( main.className )
+        }
+
+        function redireccionInterna ( path ) {
+            const host = window.location.host;
+            const hostname = window.location.hostname;
+            console.log( { host, hostname } )
+            if ( path === '/' ) return window.location.assign( '/' )
+            if ( hostname === 'localhost' || hostname === '127.0.0.1' ) {
+                return window.location.assign( `http://${host}${path}.html` );
             }
-        </script>
-    
-    </body>
+            else {
+                const midPath = '/copagocero'
+                return window.location.assign( `https://${host}${midPath}${path}` );
+            }
+        }
+
+    </script>
+
+</body>
 
 </html>
