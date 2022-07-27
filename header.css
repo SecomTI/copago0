@@ -1,6 +1,7 @@
 .headerBody {
 	display: flex;
-	background-image: url(https://s3.amazonaws.com/gobcl-prod/public_files/Campa%C3%B1as/copago-cero/imagenes/ilustraciones/mini-header.webp);
+	/* background-image: url(https://s3.amazonaws.com/gobcl-prod/public_files/Campa%C3%B1as/copago-cero/imagenes/ilustraciones/mini-header.webp); */
+	background-color: #004677;
 	background-repeat: no-repeat;
 	background-size: cover;
 	overflow: hidden;
@@ -16,8 +17,7 @@
 
 .headerBody img {
 	width: 100%;
-	height: 56,16%;
-	max-width: 1250px;
+	max-width: 1920px;
 	position: relative;
 	/* max-height: 702px; */
 	object-fit: contain
