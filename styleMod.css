@@ -138,11 +138,15 @@ nav#menu>div>ul.nav>.nav-item>.nav-link:hover {
 }
 
 .globosTexto .GloboTitulo {
-    width: 300px
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
 }
 
 .globosTexto .GloboTitulo img {
     width: 100%;
+    max-width: calc(100vw - 4em)
 }
 
 .globoZ {
