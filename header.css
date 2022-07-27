@@ -1,6 +1,6 @@
 .headerBody {
 	display: flex;
-	background-image: url(/static/mini-header.webp);
+	background-image: url(https://s3.amazonaws.com/gobcl-prod/public_files/Campa%C3%B1as/copago-cero/imagenes/ilustraciones/mini-header.webp);
 	background-repeat: no-repeat;
 	background-size: cover;
 	overflow: hidden;
