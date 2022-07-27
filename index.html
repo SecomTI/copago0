@@ -21,9 +21,9 @@
         integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="@gobdigital-cl/dist/css/gob.cl.css" type="text/css" />
     <!-- MY STYLE -->
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/header.css">
-    <link rel="stylesheet" href="/causas.css">
+    <link rel="stylesheet" href="https://s3.amazonaws.com/gobcl-prod/public_files/Campa%C3%B1as/copago-cero/style.css">
+    <link rel="stylesheet" href="https://s3.amazonaws.com/gobcl-prod/public_files/Campa%C3%B1as/copago-cero/header.css">
+    <link rel="stylesheet" href="https://s3.amazonaws.com/gobcl-prod/public_files/Campa%C3%B1as/copago-cero/causas.css">
 
     <link rel="stylesheet"
         href="https://s3.amazonaws.com/gobcl-prod/public_files/Campa%C3%B1as/Chile-Apoya/dark-mode1.css">
@@ -56,7 +56,7 @@
                             <p class="nav-link" onclick="redireccionInterna('/testimonios')">Testimonios</p>
                         </li>
                         <li class="nav-item">
-                            <p class="nav-link" onclick="redireccionInterna('/preguntas')">Preguntas frecuentes</p>
+                            <p class="nav-link" onclick="redireccionInterna('/preguntasfrecuentes')">Preguntas frecuentes</p>
                         </li>
                         <li class="nav-item">
                             <div id="readspeaker_button1" class="rs_skip rsbtn rs_preserve">
@@ -265,7 +265,7 @@
                         <div class="col-12 col-lg-6">
                             <p onclick="redireccionInterna('/')" class="nav-link">Inicio</p>
                             <p class="nav-link" onclick="redireccionInterna('/testimonios')">Ejemplos</p>
-                            <p class="nav-link" onclick="redireccionInterna('/preguntas')">Preguntas frecuentes</p>
+                            <p class="nav-link" onclick="redireccionInterna('/preguntasfrecuentes')">Preguntas frecuentes</p>
                         </div>
                         <div class="col-12 col-lg-6">
 
@@ -372,11 +372,11 @@
             const host = window.location.host;
             const hostname = window.location.hostname;
             console.log( { host, hostname } )
-            if ( path === '/' ) return window.location.assign( '/' )
-            if ( hostname !== 'gob' ) {
+            if ( (path === '/' ) && (hostname !== 'www.gob.cl') ) return window.location.assign( '/' )
+            if ( hostname !== 'www.gob.cl' ) {
                 return window.location.assign( `http://${host}${path}.html` );
             }
-            else {
+            else if (hostname === 'www.gob.cl') {
                 const midPath = '/copagocero'
                 return window.location.assign( `https://${host}${midPath}${path}` );
             }
