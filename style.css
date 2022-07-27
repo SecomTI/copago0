@@ -96,6 +96,9 @@ nav#menu>div>ul.nav>.nav-item>.nav-link:hover {
 .bold {
     font-weight: 700
 }
+.cursiva {
+    font-style: italic;
+}
 
 .contenido {
     display: flex;
@@ -105,7 +108,7 @@ nav#menu>div>ul.nav>.nav-item>.nav-link:hover {
     padding: 1.5em;
     color: #336E91;
     background-color: #F7F2EF;
-    font-size: 1.8em;
+    font-size: 1.5em;
 }
 
 .anchoComun {
@@ -136,6 +139,10 @@ nav#menu>div>ul.nav>.nav-item>.nav-link:hover {
 
 .globosTexto .GloboTitulo {
     width: 300px
+}
+
+.globosTexto .GloboTitulo img {
+    width: 100%;
 }
 
 .globoZ {

@@ -1,7 +1,10 @@
 .headerBody {
+	display: flex;
 	background-image: url(/static/mini-header.webp);
 	background-repeat: no-repeat;
 	background-size: cover;
+	overflow: hidden;
+	max-height: calc(100vh - 150px);
 }
 
 .headerBody .filtroBlur {
@@ -13,8 +16,11 @@
 
 .headerBody img {
 	width: 100%;
+	height: 56,16%;
 	max-width: 1250px;
 	position: relative;
+	/* max-height: 702px; */
+	object-fit: contain
 }
 
 .contenedorLogo {

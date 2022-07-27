@@ -135,20 +135,21 @@
                 <div class="zigzag"><img src="/static/zigzag.svg" alt=""></div>
 
                 <div class="GloboTitulo">
-                    <img src="/static/botones/Recurso 1.svg" alt="En que consiste">
+                    <!-- <img src="/static/Boton en que consiste.png" alt="En que consiste" onclick="leer('GloboTexto1')"> -->
+                    <img src="/static/Boton en que consiste.png" alt="En que consiste">
                 </div>
-                <div class="globoTexto">
+                <div class="globoTexto" id="GloboTexto1">
                     <p>Desde septiembre de 2022, si eres parte de Fonasa, todas las atenciones que recibas en el sistema
                         público serán gratuitas, sin importar el tramo al que pertenezcas.
                         <br>
                         <br>
-                        En decir, las personas beneficiarias de Fonasa de los tramos C y D tendrán gratuidad en todas
+                        Es decir, las personas beneficiarias de Fonasa de los tramos C y D tendrán gratuidad en todas
                         sus atenciones en el sistema público de salud (AUGE/GES y No AUGE/GES), sumándose así a la
                         gratuidad que ya tienen las personas de los tramos A y B.
                     </p>
                 </div>
 
-                <div class="GloboTitulo segundo"> <img src="/static/botones/Como se activa.svg"
+                <div class="GloboTitulo segundo"> <img src="/static/boton Como activar.png"
                         alt="¿Como se activa el pago?"></div>
                 <div class="globoTexto">
                     <p>Desde septiembre de 2022 este beneficio se activa automáticamente para todas las personas que
@@ -178,15 +179,15 @@
                                 <img class="selector" src="/static/selector.svg" alt="">
                             </div>
 
-                            <div><span class="bold">Pablo</span> es usuario del Tramo D, tiene 50 años y vive en la
+                            <div><span class="bold">Pablo</span> es usuario del tramo D, tiene 50 años y vive en la
                                 comuna
-                                de Maipú. Él pertenece a Fonasa en el tramo D y le diagnosticaron Esclerosis Múltiple,
+                                de Maipú. Él pertenece a Fonasa en el tramo D y le diagnosticaron <span class="cursiva">Esclerosis Múltiple,</span> 
                                 uno de los 85 problemas de salud incluidos en el AUGE o GES.
                                 <br>
                                 <br>
                                 El tratamiento de esta enfermedad en el hospital en el que se atendió tuvo un costo
                                 cercano a los 17 millones de pesos. De ese monto, Fonasa pagó más de 14 millones y Pablo
-                                pagó 3.155.308 de pesos.
+                                pagó 3.155.308 pesos.
                             </div>
 
                             <div class="noMenos1000">
@@ -194,7 +195,7 @@
                                     <div class="contenidoTable">
                                         <div class="detalle titulo bold">Problema <br>de salud</div>
                                         <div class="detalle titulo bold">Fecha registro <br>problema <br>de salud</div>
-                                        <div class="detalle titulo bold">Monto total <br>Valur de <br>prestaciones</div>
+                                        <div class="detalle titulo bold">Monto total <br>valor de <br>prestaciones</div>
                                         <div class="detalle titulo bold">Monto total <br>bonificación <br>según tramo
                                         </div>
                                         <div class="detalle titulo bold">Monto total <br>copago <br>a pagar</div>
@@ -214,7 +215,7 @@
                                     <div class="contenidoTable">
                                         <div class="detalle titulo bold">Problema <br>de salud</div>
                                         <div class="detalle titulo bold">Fecha registro <br>problema <br>de salud</div>
-                                        <div class="detalle titulo bold">Monto total <br>Valur de <br>prestaciones</div>
+                                        <div class="detalle titulo bold">Monto total <br>valor de <br>prestaciones</div>
                                         <div class="detalle titulo bold">Monto total <br>bonificación <br>según tramo
                                         </div>
                                         <div class="detalle titulo bold">Monto total <br>copago <br>a pagar</div>
@@ -380,6 +381,27 @@
                 return window.location.assign( `https://${host}${midPath}${path}` );
             }
         }
+
+        function leer ( id ) {
+            let aLeer = document.getElementById( id )
+            console.log( aLeer )
+            const leer = new SpeechSynthesisUtterance( aLeer.innerText )
+            console.log( 'leer', leer )
+
+            const lee = speechSynthesis.speak( leer )
+
+            aLeer.classList.add( 'leyendo' )
+            leer.onend = function ( event ) {
+                // console.log( `Utterance has finished being spoken after ${event.elapsedTime} seconds.` );
+                aLeer.classList.remove( 'leyendo' )
+            }
+            leer.onboundary = function ( event ) {
+                const totalCaracteres = aLeer.innerText.length
+                // console.log(`leyendo caracter ${event.charIndex} de ${totalCaracteres}`)
+            }
+
+        }
+
 
     </script>
 
