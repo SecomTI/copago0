@@ -3,12 +3,14 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
 .headerBody .filtroBlur {
 	width: 100%;
 	backdrop-filter: blur(10px);
 	display: flex;
 	justify-content: center;
 }
+
 .headerBody img {
 	width: 100%;
 	max-width: 1250px;
@@ -35,4 +37,49 @@
 .lados .lado {
 	padding: .5em;
 	max-width: 220px
+}
+
+.corazon {
+	animation: heart-beating 3s infinite ease
+}
+.lados .izq {
+	position: relative;
+	z-index: 4;
+}
+.lado .plus {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 47%;
+	z-index: 5
+}
+
+@keyframes heart-beating {
+	0% {
+		transform: scale(1)
+	}
+
+	20% {
+		transform: scale(0.95)
+	}
+
+	30% {
+		transform: scale(1)
+	}
+
+	40% {
+		transform: scale(0.95)
+	}
+
+	60% {
+		transform: scale(1)
+	}
+
+	80% {
+		transform: scale(0.95)
+	}
+
+	100% {
+		transform: scale(1)
+	}
 }
