@@ -23,6 +23,8 @@
     <!-- MY STYLE -->
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/causas.css">
+
     <link rel="stylesheet"
         href="https://s3.amazonaws.com/gobcl-prod/public_files/Campa%C3%B1as/Chile-Apoya/dark-mode1.css">
     <script src="https://cdn-sa.readspeaker.com/script/9676/webReader/webReader.js?pids=wr" type="text/javascript"
@@ -51,7 +53,7 @@
                             <p class="nav-link" onclick="redireccionInterna('/')">Inicio</p>
                         </li>
                         <li class="nav-item">
-                            <p class="nav-link" onclick="redireccionInterna('/ejemplos')">Ejemplos</p>
+                            <p class="nav-link" onclick="redireccionInterna('/testimonios')">Testimonios</p>
                         </li>
                         <li class="nav-item">
                             <p class="nav-link" onclick="redireccionInterna('/preguntas')">Preguntas frecuentes</p>
@@ -170,7 +172,9 @@
 
                     <div class="cuerpoTestimonio">
                         <div class="desarrollo">
-                            <div class="subTitulo bold"> 1. PABLO, TRAMO D</div>
+                            <div class="subTitulo bold"> 1. PABLO, TRAMO D
+                                <img class="selector" src="/static/selector.svg" alt="">
+                            </div>
 
                             <div><span class="bold">Pablo</span> es usuario del Tramo D, tiene 50 años y vive en la
                                 comuna
@@ -183,25 +187,51 @@
                                 pagó 3.155.308 de pesos.
                             </div>
 
-                            <div class="tabla">
-                                <div class="contenidoTable">
-                                    <div class="detalle titulo bold">Problema <br>de salud</div>
-                                    <div class="detalle titulo bold">Fecha registro <br>problema <br>de salud</div>
-                                    <div class="detalle titulo bold">Monto total <br>Valur de <br>prestaciones</div>
-                                    <div class="detalle titulo bold">Monto total <br>bonificación <br>según tramo</div>
-                                    <div class="detalle titulo bold">Monto total <br>copago <br>a pagar</div>
-                                </div>
-                                <div class="contenidoTable">
-                                    <div class="detalle">Esclerosis <br>múltiple <br>remitente <br>recurrente</div>
-                                    <div class="detalle">21/04/2017</div>
-                                    <div class="detalle">$17.320.740</div>
-                                    <div class="detalle">$14.160.206</div>
-                                    <div class="detalle">$3.155.308</div>
+                            <div class="noMenos1000">
+                                <div class="tabla ">
+                                    <div class="contenidoTable">
+                                        <div class="detalle titulo bold">Problema <br>de salud</div>
+                                        <div class="detalle titulo bold">Fecha registro <br>problema <br>de salud</div>
+                                        <div class="detalle titulo bold">Monto total <br>Valur de <br>prestaciones</div>
+                                        <div class="detalle titulo bold">Monto total <br>bonificación <br>según tramo
+                                        </div>
+                                        <div class="detalle titulo bold">Monto total <br>copago <br>a pagar</div>
+                                    </div>
+                                    <div class="contenidoTable">
+                                        <div class="detalle">Esclerosis <br>múltiple <br>remitente <br>recurrente</div>
+                                        <div class="detalle">21/04/2017</div>
+                                        <div class="detalle">$17.320.740</div>
+                                        <div class="detalle">$14.160.206</div>
+                                        <div class="detalle">$3.155.308</div>
+                                    </div>
                                 </div>
                             </div>
 
+                            <div class="noMas1000">
+                                <div class="tablaRow">
+                                    <div class="contenidoTable">
+                                        <div class="detalle titulo bold">Problema <br>de salud</div>
+                                        <div class="detalle titulo bold">Fecha registro <br>problema <br>de salud</div>
+                                        <div class="detalle titulo bold">Monto total <br>Valur de <br>prestaciones</div>
+                                        <div class="detalle titulo bold">Monto total <br>bonificación <br>según tramo
+                                        </div>
+                                        <div class="detalle titulo bold">Monto total <br>copago <br>a pagar</div>
+                                    </div>
+                                    <div class="contenidoTable">
+                                        <div class="detalle">Esclerosis <br>múltiple <br>remitente <br>recurrente</div>
+                                        <div class="detalle">21/04/2017</div>
+                                        <div class="detalle">$17.320.740</div>
+                                        <div class="detalle">$14.160.206</div>
+                                        <div class="detalle">$3.155.308</div>
+                                    </div>
+                                </div>
+                            </div>
+
+
                             <div>
-                                Desde septiembre de 2022 las personas como Pablo no pagarán por sus atenciones de salud en la Red Pública. Es decir, <span class="bold">serán gratuitas porque Fonasa cubrirá el costo total del tratamiento en la Modalidad de Atención Institucional.</span> 
+                                Desde septiembre de 2022 las personas como Pablo no pagarán por sus atenciones de salud
+                                en la Red Pública. Es decir, <span class="bold">serán gratuitas porque Fonasa cubrirá el
+                                    costo total del tratamiento en la Modalidad de Atención Institucional.</span>
                             </div>
                         </div>
                     </div>
@@ -209,7 +239,8 @@
                     <div class="cierre">
                         <div class="curva"><img src="/static/curva.svg" alt=""></div>
                         <div class="texto">Revisa más</div>
-                        <div class="boton" onclick="redireccionInterna('/ejemplos')"><img src="/static/botones/ejemplos.svg" alt=""></div>
+                        <div class="boton" onclick="redireccionInterna('/testimonios')"><img
+                                src="/static/botones/ejemplos.svg" alt=""></div>
                     </div>
 
                 </div>
@@ -230,8 +261,8 @@
                         <p><b>Gobierno de Chile </b></p>
                         <div class="col-12 col-lg-6">
                             <p onclick="redireccionInterna('/')" class="nav-link">Inicio</p>
-                            <a href="#medidas" class="nav-link">Medidas</a>
-                            <p class="nav-link" onclick="redireccionInterna('/ejemplos')">Ejemplos</p>
+                            <p class="nav-link" onclick="redireccionInterna('/testimonios')">Ejemplos</p>
+                            <p class="nav-link" onclick="redireccionInterna('/preguntas')">Preguntas frecuentes</p>
                         </div>
                         <div class="col-12 col-lg-6">
 

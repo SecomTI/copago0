@@ -168,6 +168,12 @@ div.panel li {
     font-size: 1.6em;
     color: #FFFFFF;
 }
+.caso {
+    padding: 2em
+}
+.casos {
+    padding: 2em
+}
 /* ----------------------- FOOTER ----------------------- */
 .footer {
     bottom: 0;

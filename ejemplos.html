@@ -1,239 +1,269 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <!-- BOOTSTRAP 4.6 -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-            integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-      
-        <!-- FONT AWESOME -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-            integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-        <!----------------- FONT AWESOME ----------------->
-        <!-- V5.1 -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
-            integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-        <!-- V5.5 -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-            integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-        <link rel="stylesheet" href="@gobdigital-cl/dist/css/gob.cl.css" type="text/css" />
-        <!-- MY STYLE -->
-        <link rel="stylesheet" href="estilos-pestanas.css">
-        <link rel="stylesheet"
-            href="https://s3.amazonaws.com/gobcl-prod/public_files/Campa%C3%B1as/Chile-Apoya/dark-mode1.css">
-        <script src="https://cdn-sa.readspeaker.com/script/9676/webReader/webReader.js?pids=wr" type="text/javascript"
-            id="rs_req_Init"></script>
-    
-        <title>Testimonios</title>
-        
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- BOOTSTRAP 4.6 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
-    <body>
-        <header class="container-fluid navigation sticky-top rs_skip">
-            <div class="container">
-                <nav id="menu" class="navbar navbar-expand-lg navbar-dark">
-                    <a class="navbar-brand" href="https://www.gob.cl/" target="_blank"><img
-                            src="https://cdn.digital.gob.cl/public_files/Logos/logo-gob-header.svg" class="logo"
-                            alt="Gobierno de Chile"></a>
-                    <button class="navbar-toggler mt-1" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent"
-                        style="z-index: 1;">
-                        <ul class="nav">
-                            <li class="nav-item">
-                                <p class="nav-link" onclick="redireccionInterna('/')">Inicio</p>
-                            </li>
-                            <li class="nav-item">
-                                <p class="nav-link" onclick="redireccionInterna('/ejemplos')">Ejemplos</p>
-                            </li>
-                            <li class="nav-item">
-                                <p class="nav-link" onclick="redireccionInterna('/preguntas')">Preguntas frecuentes</p>
-                            </li>
-                            <li class="nav-item">
-                                <div id="readspeaker_button1" class="rs_skip rsbtn rs_preserve">
-                                    <a rel="nofollow" class="rsbtn_play" accesskey="L"
-                                        title="Escucha esta p&aacute;gina utilizando ReadSpeaker webReader"
-                                        href="https://app-sa.readspeaker.com/cgi-bin/rsent?customerid=9676&amp;lang=es_us&amp;readid=leer&amp;url=https://www.gob.cl/chileapoya">
-                                        <span class="rsbtn_left rsimg rspart rsplay"><span
-                                                class="rsbtn_text"><span>Escuchar</span></span></span>
-                                    </a>
-                                </div>
-    
-                            </li>
-                            <li class="nav-item">
-                                <div class="font-controls desktop">
-                                    <span onclick="zoomIn()" class="font-control" id="font-up">A<sup>+</sup></span>
-                                    <span onclick="zoomOut()" class="font-control" id="font-down">A<sup>-</sup></span>
-                                </div>
-                            </li>
-                        </ul>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!----------------- FONT AWESOME ----------------->
+    <!-- V5.1 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <!-- V5.5 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="@gobdigital-cl/dist/css/gob.cl.css" type="text/css" />
+    <!-- MY STYLE -->
+    <link rel="stylesheet" href="estilos-pestanas.css">
+    <link rel="stylesheet"
+        href="https://s3.amazonaws.com/gobcl-prod/public_files/Campa%C3%B1as/Chile-Apoya/dark-mode1.css">
+    <script src="https://cdn-sa.readspeaker.com/script/9676/webReader/webReader.js?pids=wr" type="text/javascript"
+        id="rs_req_Init"></script>
+
+    <title>Testimonios</title>
+
+</head>
+
+<body>
+    <header class="container-fluid navigation sticky-top rs_skip">
+        <div class="container">
+            <nav id="menu" class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="https://www.gob.cl/" target="_blank"><img
+                        src="https://cdn.digital.gob.cl/public_files/Logos/logo-gob-header.svg" class="logo"
+                        alt="Gobierno de Chile"></a>
+                <button class="navbar-toggler mt-1" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent"
+                    style="z-index: 1;">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <p class="nav-link" onclick="redireccionInterna('/')">Inicio</p>
+                        </li>
+                        <li class="nav-item">
+                            <p class="nav-link" onclick="redireccionInterna('/ejemplos')">Ejemplos</p>
+                        </li>
+                        <li class="nav-item">
+                            <p class="nav-link" onclick="redireccionInterna('/preguntas')">Preguntas frecuentes</p>
+                        </li>
+                        <li class="nav-item">
+                            <div id="readspeaker_button1" class="rs_skip rsbtn rs_preserve">
+                                <a rel="nofollow" class="rsbtn_play" accesskey="L"
+                                    title="Escucha esta p&aacute;gina utilizando ReadSpeaker webReader"
+                                    href="https://app-sa.readspeaker.com/cgi-bin/rsent?customerid=9676&amp;lang=es_us&amp;readid=leer&amp;url=https://www.gob.cl/chileapoya">
+                                    <span class="rsbtn_left rsimg rspart rsplay"><span
+                                            class="rsbtn_text"><span>Escuchar</span></span></span>
+                                </a>
+                            </div>
+
+                        </li>
+                        <li class="nav-item">
+                            <div class="font-controls desktop">
+                                <span onclick="zoomIn()" class="font-control" id="font-up">A<sup>+</sup></span>
+                                <span onclick="zoomOut()" class="font-control" id="font-down">A<sup>-</sup></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <main id="leer" class="light-mode">
+        <div class="container ">
+            <img src="btn-ejemplos.svg" class="img-fluid d-block mx-auto mt-5 mb-3" width="500" />
+            <div class="container bg-ej casos">
+
+                <div class="caso">
+                    <img src="ej-2.svg" class="img-fluid d-block mx-auto mb-3" />
+                    <!--2. Hector, tramo C.-->
+                    <div class="textoCaso">
+                        <p><b>Héctor y su familia</b> pertenecen a Fonasa tramo C y viven en la región de Atacama.
+                            Cuando
+                            nació
+                            el hijo de Héctor le diagnosticaron Síndrome de Dificultad Respiratoria en el Recién Nacido,
+                            un
+                            problema de salud AUGE o GES.</p>
+                        <p>El monto de las atenciones que le brindaron a su hijo menor tuvo un costo total de 6.827.700
+                            de
+                            pesos. Fonasa cubrió 5.462.160 pesos y el copago de Héctor y su familia fue de 1.365.540
+                            pesos.
+                        </p>
                     </div>
-                </nav>
-            </div>
 
-        </header>
-    
-        <main id="leer" class="light-mode">
-           <div class="container">
-            <img src="btn-ejemplos.svg" class="img-fluid d-block mx-auto mt-5 mb-3" width="500"/>
-           <div class="container bg-ej">
-            <img src="ej-2.svg" class="img-fluid d-block mx-auto mb-3" />
-            <!--2. Hector, tramo C.-->
-            <p><b>Héctor y su familia</b> pertenecen a Fonasa tramo C y viven en la región de Atacama. Cuando nació el hijo de Héctor le diagnosticaron Síndrome de Dificultad Respiratoria en el Recién Nacido, un problema de salud AUGE o GES.</p>
-            <p>El monto de las atenciones que le brindaron a su hijo menor tuvo un costo total de 6.827.700 de pesos. Fonasa cubrió 5.462.160 pesos y el copago de Héctor y su familia fue de 1.365.540 pesos.</p>
-            <!-- Tabla.
-            Problema de salud. SÍNDROME DE DIFICULTAD RESPIRATORIA EN EL RECIÉN NACIDO.
-            FECHA REGISTRO PROBLEMA DE SALUD. 06 de julio de 2016.
-            MONTO TOTAL VALOR DE PRESTACIONES. 6.827.700.
-            MONTO TOTAL BONIFICACIÓN SEGÚN TRAMO. 5.462.160.
-            MONTO TOTAL COPAGO A PAGAR. 1.365.540.-->
-            <img src="tab-2.svg" class="img-fluid d-block mx-auto mb-3 px-2 px-lg-5">
-            <br>
-            <img src="ej-3.svg" class="img-fluid d-block mx-auto mb-3" />
-             <!--2. Francisca, tramo C.-->
-            <p><b>Francisca</b> es usuaria de Fonasa en el tramo C, tiene 40 años. En 2020 se operó de una Histerectomía Radical Benigna No GES en el Hospital Las Higueras de Talcahuano.</p>
-            <p>El monto de las atenciones que le brindaron a Francisca tuvo un costo total de 1.539.350 pesos. Fonasa cubrió 1.385.415 pesos y el copago fue de 153.935 pesos.</p>
-            <!-- Tabla.
-            Problema de salud. HISTERECTOMÍA RADICAL BENIGNA NO GES.
-            FECHA REGISTRO PROBLEMA DE SALUD. 30 de marzo de 2020.
-            MONTO TOTAL VALOR DE PRESTACIONES. 1.539.350.
-            MONTO TOTAL BONIFICACIÓN SEGÚN TRAMO. 1.385.415.
-            MONTO TOTAL COPAGO A PAGAR. 153.935.-->
-            <img src="tab-3.svg" class="img-fluid d-block mx-auto mb-3 px-2 px-lg-5">
-            <br>
-            <img src="ej-4.svg" class="img-fluid d-block mx-auto mb-3" />
-             <!--2. Tiare, tramo D.-->
-            <p><b>Tiare</b> es usuaria de Fonasa en el tramo D y tiene 28 años. En 2019 tuvo un Tratamiento Integral por Fracturas Expuestas de Muslo y Pierna, siendo atendida en el Hospital de Urgencia Asistencia Pública en la Región Metropolitana. </p>
-            <p>El monto total de las atenciones que le brindaron a Tiare tuvo un costo de 4.947.530 pesos. Fonasa cubrió 3.985.024 pesos y el copago fue de 989.506 pesos.</p>
-            <!-- Tabla.
+                    <!-- Tabla.
+                    Problema de salud. SÍNDROME DE DIFICULTAD RESPIRATORIA EN EL RECIÉN NACIDO.
+                    FECHA REGISTRO PROBLEMA DE SALUD. 06 de julio de 2016.
+                    MONTO TOTAL VALOR DE PRESTACIONES. 6.827.700.
+                    MONTO TOTAL BONIFICACIÓN SEGÚN TRAMO. 5.462.160.
+                    MONTO TOTAL COPAGO A PAGAR. 1.365.540.-->
+                    <img src="tab-2.svg" class="img-fluid d-block mx-auto mb-3 px-2 px-lg-5">
+                </div>
+
+                <div class="caso">
+                    <img src="ej-3.svg" class="img-fluid d-block mx-auto mb-3" />
+                    <!--2. Francisca, tramo C.-->
+                    <p><b>Francisca</b> es usuaria de Fonasa en el tramo C, tiene 40 años. En 2020 se operó de una
+                        Histerectomía Radical Benigna No GES en el Hospital Las Higueras de Talcahuano.</p>
+                    <p>El monto de las atenciones que le brindaron a Francisca tuvo un costo total de 1.539.350 pesos.
+                        Fonasa cubrió 1.385.415 pesos y el copago fue de 153.935 pesos.</p>
+                    <!-- Tabla.
+                    Problema de salud. HISTERECTOMÍA RADICAL BENIGNA NO GES.
+                    FECHA REGISTRO PROBLEMA DE SALUD. 30 de marzo de 2020.
+                    MONTO TOTAL VALOR DE PRESTACIONES. 1.539.350.
+                    MONTO TOTAL BONIFICACIÓN SEGÚN TRAMO. 1.385.415.
+                    MONTO TOTAL COPAGO A PAGAR. 153.935.-->
+                    <img src="tab-3.svg" class="img-fluid d-block mx-auto mb-3 px-2 px-lg-5">
+                </div>
+
+                <div class="caso">
+                    <img src="ej-4.svg" class="img-fluid d-block mx-auto mb-3" />
+                    <!--2. Tiare, tramo D.-->
+                    <p><b>Tiare</b> es usuaria de Fonasa en el tramo D y tiene 28 años. En 2019 tuvo un Tratamiento
+                        Integral
+                        por Fracturas Expuestas de Muslo y Pierna, siendo atendida en el Hospital de Urgencia Asistencia
+                        Pública en la Región Metropolitana. </p>
+                    <p>El monto total de las atenciones que le brindaron a Tiare tuvo un costo de 4.947.530 pesos.
+                        Fonasa
+                        cubrió 3.985.024 pesos y el copago fue de 989.506 pesos.</p>
+                    <!-- Tabla.
             Problema de salud. TRATAMIENTO INTEGRAL FRACTURAS EXPUESTAS DE MUSLO Y PIERNA.
             FECHA REGISTRO PROBLEMA DE SALUD. 24 de abril de 2019.
             MONTO TOTAL VALOR DE PRESTACIONES. 4.947.530.
             MONTO TOTAL BONIFICACIÓN SEGÚN TRAMO. 3.985.024.
             MONTO TOTAL COPAGO A PAGAR. 989.506.-->
-            <img src="tab-3.svg" class="img-fluid d-block mx-auto mb-3 px-2 px-lg-5">
-            <br>
-            <p>Desde septiembre las personas como Tiare no pagarán por sus atenciones de salud en la Red Pública. Es decir, serán gratuitas porque Fonasa cubrirá el costo total del tratamiento en la Modalidad de Atención Institucional.</p>
-            <br>
-            <a href="preguntas.html"><img src="btn-faq.svg" class="img-fluid d-block mx-auto mb-5" width="500"/></a>
-            <br>
-           </div>
-           
-           </div>
-        
-            <footer class="footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-lg-10 pt-5 pb-3">
-                            <p><b>Gobierno de Chile</b></p>
-                            <div class="col-12 col-lg-6">
-                                <a href="https://www.gob.cl/chileapoya" class="nav-link">Inicio</a>
-                                <a href="#medidas" class="nav-link">Medidas</a>
-                            </div>
-                            <div class="col-12 col-lg-6">
-    
-    
-                            </div>
-    
+                    <img src="tab-3.svg" class="img-fluid d-block mx-auto mb-3 px-2 px-lg-5">
+                    <br>
+                    <p>Desde septiembre las personas como Tiare no pagarán por sus atenciones de salud en la Red
+                        Pública. Es
+                        decir, serán gratuitas porque Fonasa cubrirá el costo total del tratamiento en la Modalidad de
+                        Atención Institucional.</p>
+                </div>
+
+
+                <a href="preguntas.html"><img src="btn-faq.svg" class="img-fluid d-block mx-auto mb-5"
+                        width="500" /></a>
+            </div>
+
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-10 pt-5 pb-3">
+                        <p><b>Gobierno de Chile</b></p>
+                        <div class="col-12 col-lg-6">
+                            <a href="https://www.gob.cl/chileapoya" class="nav-link">Inicio</a>
+                            <a href="#medidas" class="nav-link">Medidas</a>
                         </div>
-                        <div class="col-12 col-lg-2 pt-5 pb-3">
-                            <div class="float-left float-lg-right">
-                                <p><b>Síguenos</b></p>
-                                <div class="socialmedia">
-                                    <a href="https://www.facebook.com/gobiernodechile" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                                    </a>
-                                    <a href="https://twitter.com/Gobiernodechile" target="_blank" rel="noopener noreferrer">
-                                        <i class="fab fa-twitter" aria-hidden="true"></i>
-                                    </a>
-                                    <a href="https://www.instagram.com/gobiernodechile/" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <i class="fab fa-instagram" aria-hidden="true"></i>
-                                    </a>
-                                </div>
+                        <div class="col-12 col-lg-6">
+
+
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-lg-2 pt-5 pb-3">
+                        <div class="float-left float-lg-right">
+                            <p><b>Síguenos</b></p>
+                            <div class="socialmedia">
+                                <a href="https://www.facebook.com/gobiernodechile" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://twitter.com/Gobiernodechile" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://www.instagram.com/gobiernodechile/" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="container border-bottom">
-                </div>
-                <div class="row m-0">
-                    <div class="container separa-logo relative mt-4">
-    
-                        <p class="gob-txt"><small>Desarrollado por Secretaría de Comunicaciones - MSGG</small></p>
-    
-                        <div class="vertical-align-bottom  mt-3">
-                            <a href="https://www.gob.cl/">
-                                <img src="https://cdn.digital.gob.cl/public_files/Campa%C3%B1as/Juntos-en-Casa/gob-footer.svg"
-                                    width="150" alt="Gobierno de Chile" class="align-bottom">
-                            </a>
-                        </div>
-    
+            </div>
+            <div class="container border-bottom">
+            </div>
+            <div class="row m-0">
+                <div class="container separa-logo relative mt-4">
+
+                    <p class="gob-txt"><small>Desarrollado por Secretaría de Comunicaciones - MSGG</small></p>
+
+                    <div class="vertical-align-bottom  mt-3">
+                        <a href="https://www.gob.cl/">
+                            <img src="https://cdn.digital.gob.cl/public_files/Campa%C3%B1as/Juntos-en-Casa/gob-footer.svg"
+                                width="150" alt="Gobierno de Chile" class="align-bottom">
+                        </a>
                     </div>
+
                 </div>
-            </footer>
-        </main>
-        <!-- FIN FOOTER-->
-    
-        <!-- FontAwesome kit -->
-        <script src="https://kit.fontawesome.com/99f6481b29.js" crossorigin="anonymous"></script>
-        <!--jQUERY-->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"
-            class="cms-plugin cms-plugin-207207"></script>
-        <script src="https://code.jquery.com/jquery-2.2.4.js"
-            integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"
-            class="cms-plugin cms-plugin-207207"></script>
-        <!--AJAX-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"
-            class="cms-plugin cms-plugin-207207"></script>
-        <!--BOOTSTRAP-->
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-            integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"
-            class="cms-plugin cms-plugin-207207"></script>
-        <script>
+            </div>
+        </footer>
+    </main>
+    <!-- FIN FOOTER-->
 
-    
-            /* SCRIPT TAMAÑO FUENTE - no aumenta tamaño de fuente establecida en pixeles */
-    
-            // funcion para aumentar la fuente
-            var fontSize = 1;
-            var fontMin = 0.75;
-            var fontMax = 1.1;
-    
-            // funcion para aumentar la fuente
-            function zoomIn() {
-                if (fontSize <= fontMax) {
-                    fontSize += 0.1;
-                    document.body.style.fontSize = fontSize + "em";
-                }
-            }
-    
-            // funcion para disminuir la fuente
-            function zoomOut() {
-                if (fontSize >= fontMin) {
-                    fontSize -= 0.1;
-                    document.body.style.fontSize = fontSize + "em";
-                }
-            }
-    
-            function toggleDarkLight() {
-    
-                var main = document.getElementById("leer");
-                var currentClass = main.className;
-                main.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
-                console.log(main.className)
-            }
+    <!-- FontAwesome kit -->
+    <script src="https://kit.fontawesome.com/99f6481b29.js" crossorigin="anonymous"></script>
+    <!--jQUERY-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"
+        class="cms-plugin cms-plugin-207207"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.js"
+        integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"
+        class="cms-plugin cms-plugin-207207"></script>
+    <!--AJAX-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"
+        class="cms-plugin cms-plugin-207207"></script>
+    <!--BOOTSTRAP-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"
+        class="cms-plugin cms-plugin-207207"></script>
+    <script>
 
-            function redireccionInterna ( path ) {
+
+        /* SCRIPT TAMAÑO FUENTE - no aumenta tamaño de fuente establecida en pixeles */
+
+        // funcion para aumentar la fuente
+        var fontSize = 1;
+        var fontMin = 0.75;
+        var fontMax = 1.1;
+
+        // funcion para aumentar la fuente
+        function zoomIn () {
+            if ( fontSize <= fontMax ) {
+                fontSize += 0.1;
+                document.body.style.fontSize = fontSize + "em";
+            }
+        }
+
+        // funcion para disminuir la fuente
+        function zoomOut () {
+            if ( fontSize >= fontMin ) {
+                fontSize -= 0.1;
+                document.body.style.fontSize = fontSize + "em";
+            }
+        }
+
+        function toggleDarkLight () {
+
+            var main = document.getElementById( "leer" );
+            var currentClass = main.className;
+            main.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+            console.log( main.className )
+        }
+
+        function redireccionInterna ( path ) {
             const host = window.location.host;
             const hostname = window.location.hostname;
             console.log( { host, hostname } )
@@ -246,8 +276,8 @@
                 return window.location.assign( `https://${host}${midPath}${path}` );
             }
         }
-        </script>
-    
-    </body>
+    </script>
+
+</body>
 
 </html>

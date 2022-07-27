@@ -1,0 +1,254 @@
+.testimonios {
+	width: 100%;
+	padding: 2em 1em;
+	color: #F7F2EF;
+	position: relative;
+	margin-top: 4em
+}
+
+.testimonios .zigzag {
+	position: absolute;
+	left: -3.5em;
+	top: -3em;
+
+}
+
+.contenedorTestimonios {
+	background-color: #71A4CD;
+	border-radius: 20px;
+	padding: 1em;
+}
+
+.contenedorTestimonios .cabecera {
+	display: flex;
+	flex-flow: row nowrap;
+	width: 100%
+}
+
+.contenedorTestimonios .cabecera .lado {
+	width: 50%;
+	padding: 2em;
+	min-height: 250px
+}
+
+.cabecera .lado img {
+	width: 100%;
+	min-width: 150px
+}
+
+.subTitulo {
+	position: relative;
+}
+
+.selector {
+	width: 32px;
+	position: absolute;
+	left: -1.5em;
+	top: 0;
+	bottom: 0;
+}
+
+.rela {
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+.rela img {
+	position: absolute;
+	top: -30%;
+	max-width: 400px;
+	right: 0;
+}
+
+.rela .medico {
+	position: absolute;
+	top: -10%;
+	max-width: 300px;
+	right: 0;
+}
+
+.rela .curvas {
+	position: absolute;
+	top: 75%;
+	max-width: 80%;
+	left: 1em;
+}
+
+.lado .titulo {
+	font-size: 2.5em
+}
+
+.lado .curva {
+	width: 270px;
+	margin-left: -3em;
+}
+
+.cuerpoTestimonio {
+	padding: 0 2em
+}
+
+.desarrollo .subTitulo {
+	padding-bottom: 1em
+}
+
+.tabla {
+	display: flex;
+	flex-flow: column nowrap;
+	width: 100%;
+	border: 1px solid #F7F2EF;
+	margin: 2em 0 2em 0
+}
+
+.contenidoTable {
+	display: flex;
+	flex-flow: row nowrap;
+	width: 100%;
+}
+
+.contenidoTable .titulo {
+	color: #084675;
+}
+
+.contenidoTable .detalle {
+	font-size: .7em;
+	display: flex;
+	border: 2px solid #F7F2EF;
+	width: 20%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 180px;
+	overflow: hidden
+}
+
+.contenedorTestimonios .cierre {
+	display: flex;
+	flex-flow: column nowrap;
+	width: 100%;
+	align-items: center;
+	padding: 2em;
+	margin-top: 1em
+}
+
+.cierre .curva {
+	display: flex;
+	justify-content: center;
+}
+
+.cierre .curva img {
+	width: 50%;
+}
+
+.cierre .texto {
+	color: #084675;
+	font-size: 2em;
+	font-weight: 700
+}
+
+.cierre .boton {
+	display: flex;
+	justify-content: center;
+}
+
+.cierre .boton img {
+	width: 65%;
+	cursor: pointer;
+}
+
+.tablaRow {
+	display: flex;
+	flex-flow: row nowrap;
+	width: 100%;
+	justify-content: center;
+	margin: 2em 0;
+}
+
+.tablaRow .contenidoTable {
+	display: flex;
+	flex-flow: column nowrap;
+	width: 180px;
+}
+
+.contenidoTable .detalle {
+	width: 100%
+}
+
+
+.boton {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	padding-top: 2em;
+}
+
+.boton img {
+	width: 50%;
+	min-width: 300px;
+	max-width: 550px;
+}
+
+/* @media (max-width: 1075) {
+	.noMenos1000 {
+		display: none
+	}
+
+} */
+.noMas1000 {
+	display: none
+}
+
+@media (max-width: 1070px) {
+	.noMenos1000 {
+		display: none;
+	}
+
+	.noMas1000 {
+		display: block;
+	}
+
+	.tablaRow {
+		flex-flow: row nowrap;
+	}
+
+	.contenidoTable {
+		flex-flow: column nowrap;
+		width: 180px
+	}
+}
+
+@media (max-width: 760px) {
+	.lado .titulo {
+		font-size: 2em
+	}
+
+	.contenidoTable .detalle {
+		font-size: .7em;
+	}
+
+	.cierre .texto {
+		font-size: 2em;
+	}
+}
+
+@media screen and (max-width: 560px) {
+	.contenedorTestimonios {
+		padding: 0;
+	}
+
+	.selector {
+		width: 25px;
+		left: -1.5em;
+		top: 0;
+		bottom: 0;
+	}
+
+	.lado .curva {
+		margin-left: -2em;
+	}
+
+	.rela .medico {
+		top: -4%
+	}
+}
