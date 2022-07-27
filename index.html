@@ -339,7 +339,7 @@
             const hostname = window.location.hostname;
             console.log( { host, hostname } )
             if ( path === '/' ) return window.location.assign( '/' )
-            if ( hostname === 'localhost' || hostname === '127.0.0.1' ) {
+            if ( hostname !== 'gob' ) {
                 return window.location.assign( `http://${host}${path}.html` );
             }
             else {
